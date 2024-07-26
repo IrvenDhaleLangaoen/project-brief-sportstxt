@@ -1,0 +1,80 @@
+<!-- Programmer: Irven Dhale C. Langaoen
+     Date: July 26, 2024
+     Place: Bakakeng Central, Baguio City
+     Project: Cut-up for SportsTXT (Project Brief)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../src/styles/styles.css">
+    <link rel="icon" href="../../src/assets/images/sports-txt-logo-mini.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container mt-3">
+      <!-- Navbar Component -->
+      <nav-bar></nav-bar>
+      <script src="../../src/components/navbar.js"></script>
+
+      <!-- Section 1 -->
+      <div class="d-flex flex-column justify-content-center align-items-center mt-3">
+        <img src="../../src/assets/images/figure-10.png" alt="figure-10" class="img-fluid w-100 mt-3">
+      </div>
+      
+      <div class="row g-4 mt-3">
+        <div 
+            class="col-md-5 d-flex flex-column justify-content-center align-items-center mt-3" 
+            style="background-color: #FAC8D1; padding: 20px; border-radius: 20px;"
+          >
+            <p class="h1 contact-us-header">The Netherlands</p>
+            <p class="h6 text-center">NMS PRODUCTIONS EUROPE B.V.Herengracht 257, 1016 BJ, Amsterdam, The Netherlands</p>
+            <img src="../../src/assets/images/sports-txt-logo-2.png" alt="logo-2" class="img-fluid w-75 mt-3">
+          </div>
+
+          <div class="col-md-2"></div>
+          <!-- Section 2 -->
+          <div 
+            class="col-md-5 mt-3"
+            style="background-color: #9AD2CB; padding: 20px; border-radius: 20px;"
+          >
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label h6">Name</label>
+              <input type="text" class="form-control h6" id="exampleFormControlInput1" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput2" class="form-label h6">Email address</label>
+              <input type="email" class="form-control h6" id="exampleFormControlInput2" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput3" class="form-label h6">Phone</label>
+              <input type="tel" class="form-control h6" id="exampleFormControlInput3" placeholder="Your Phone Number">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput4" class="form-label h6">Industry</label>
+              <input type="text" class="form-control h6" id="exampleFormControlInput4" placeholder="Your Industry">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label h6">Message</label>
+              <textarea class="form-control h6" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary h6" style="background-color: #FAC8D1 !important; ">Send</button>
+          </div>
+      </div>
+
+      <!-- Section 3 -->
+      <custom-image-container></custom-image-container>
+      <script src="../../src/components/cta.js"></script>
+    </div>
+
+    <!-- Footer-->
+    <custom-footer></custom-footer>
+    <script src="../../src/components/footer.js"></script>
+</body>
+
+</html>
